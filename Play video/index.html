@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <video loop muted autoplay id="video" src="vecteezy_flat-cartoon-animation-a-man-driving-a-car-on-road_2645533.mov">
+        </video>
+        <button type="button" onclick="clickk()" id="btn">Play/Pause</button>
+    </div>
+
+</body>
+
+<script>
+    var video = document.getElementById("video");
+    var btn = document.getElementById("btn");
+
+    function clickk() {
+        if(video.paused){
+            video.play()
+            btn.innerHTML = "pause";
+        }
+
+        else{
+            video.pause();
+            btn.innerHTML = "play";
+        }
+
+    }
+
+</script>
+
+</html>
